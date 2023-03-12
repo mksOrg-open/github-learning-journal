@@ -11,8 +11,6 @@ dotnet add <PROJECT> package <PACKAGE_NAME> [options]
 ```
 
 
-
-
 Solution:
 https://learn.microsoft.com/en-us/dotnet/core/testing/unit-testing-with-dotnet-test
 
@@ -25,7 +23,7 @@ dotnet new sln -o unit-testing-using-dotnet-test
 dotnet new classlib -o PrimeService
 ```
 
-
+```c#
 using System;
 
 namespace Prime.Services
@@ -38,19 +36,19 @@ namespace Prime.Services
         }
     }
 }
-
-
 ```
+
+```sh
 dotnet sln add ./PrimeService/PrimeService.csproj
 ```
 
-```
+```sh
 dotnet new xunit -o PrimeService.Tests 
 ```
 
 Add the `PrimeService` class library as a dependency to the _PrimeService.Tests_ project:
 
-```
+```sh
 dotnet add ./PrimeService.Tests/PrimeService.Tests.csproj reference  ./PrimeService/PrimeService.csproj
 ```
 

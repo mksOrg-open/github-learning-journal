@@ -12,12 +12,21 @@
   <div id="app"></div>
   <script>
     window.$docsify = {
-      name: '',
-      repo: '',
-      loadSidebar: true
+      name: 'Github Journal',
+      repo: 'https://github.com/mksOrg-open/github-learning-journal',
+      subMaxLevel: 2,
+      loadSidebar: true,
+      autoHeader: true,
+      mergeNavbar: true,
+      routerMode: 'history',
+      copyCode: {
+        buttonText : 'Copy',
+        errorText  : 'Error',
+        successText: 'Copied'
+      }
     }
   </script>
-  <!-- Docsify v4 -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
 </body>
 </html>

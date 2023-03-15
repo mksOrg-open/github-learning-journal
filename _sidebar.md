@@ -3,5 +3,5 @@
 - [Home](/)
 - **Asp.Net**
     - [Getting Started](dotnet/getting-started.md)
-    - [.Net CLI](dotnet/dotnet-cli/index.md)
+    - [.Net CLI](dotnet/dotnet-cli/commands.md)
 - [Docsify](docsify.md)

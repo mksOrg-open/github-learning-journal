@@ -1,0 +1,30 @@
+## How to run "nvm" in "oh my zsh"?
+
+use homebrew to install nvm
+
+```sh
+brew install nvm
+```
+
+edit your system configuration
+
+```sh
+    vim ~/.zshrc     # or  vim ~/.bashrc
+    export NVM_DIR=~/.nvm
+```
+
+esc > :wq
+save file
+
+reload the configuration
+
+```sh
+source $(brew --prefix nvm)/nvm.sh
+```
+
+view nvm version
+
+```sh
+$ nvm --version
+# 0.36.0
+```
